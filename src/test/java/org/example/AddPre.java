@@ -19,7 +19,7 @@ public class AddPre {
         options.addArguments("disable-popup-blocking");
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://pudra.by/gift-card");
-        //qw
+
 
         WebElement limitImputField = driver.findElement(By.cssSelector("#formPresentCard > div.form-group > input"));
         limitImputField.click();
