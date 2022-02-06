@@ -19,6 +19,7 @@ public class AddBasket {
         options.addArguments("disable-popup-blocking");
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://pudra.by/catalog/face/klapp/bb-krem-spf-gk-cuvee-prestige-klapp");
+        //h
 
         WebElement wekElement = driver.findElement(By.cssSelector("body > div:nth-child(1) > div.wrapper-page > main > section.section.section-card-product > div > div > div:nth-child(2) > div.col-md-12.col-sm-13 > div > div > div.card-product-content-inner > table > tbody > tr:nth-child(2) > td:nth-child(2) > div > div.col-sm-8.col-xs-7.col-btn-pay > button"));
         wekElement.click();
