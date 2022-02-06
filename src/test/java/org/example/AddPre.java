@@ -20,7 +20,7 @@ public class AddPre {
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://pudra.by/gift-card");
 
-
+//r
         WebElement limitImputField = driver.findElement(By.cssSelector("#formPresentCard > div.form-group > input"));
         limitImputField.click();
         limitImputField.sendKeys("1000");
