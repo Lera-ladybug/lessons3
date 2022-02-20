@@ -27,7 +27,9 @@ public class AppTest
         options.addArguments("--incognito");
         options.addArguments("disable-popup-blocking");
         WebDriver driver = new ChromeDriver(options);
+        //driver.manage().timeouts().implicitlyWait(time:3, WebDriver.Timeunit.Seconds);
         driver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
+
 
     }
 }
