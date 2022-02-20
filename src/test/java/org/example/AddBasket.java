@@ -24,11 +24,12 @@ public class AddBasket {
         //((JavascriptExecutor)driver).executeScript("window.focus();");
         List<WebElement> products = driver.findElements(By.xpath("//div[@class=\"product-container\"]"));
 
-        System.out.println("Product elements: " + products.size());
+        //System.out.println("Product elements: " + products.size());
 
         WebElement firstProduct = products.get(0);
         firstProduct.click();
-
+WebElement checkOut = driver.findElement(By.xpath("//*[@id=\"add_to_cart\"]"));
+checkOut.click();
         ThreadSleep.sleep(3);
 
         ///
