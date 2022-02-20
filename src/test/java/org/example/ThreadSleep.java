@@ -1,13 +1,12 @@
 package org.example;
 
-import org.openqa.selenium.StaleElementReferenceException;
-
 public class ThreadSleep {
-    public static void main(String[] args) throws StaleElementReferenceException, InterruptedException {
-        long start = System.currentTimeMillis();
-        Thread.sleep(2000);
-
+    public static void sleep(long seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
-
 }
 

@@ -24,14 +24,14 @@ public class Entry {
         WebElement limitImputField = driver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a"));
         limitImputField.click();
         WebElement emailInputField = driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[2]/form/div/div[1]/input"));
-        emailInputField.click();
+        //emailInputField.click();
         emailInputField.click();
         emailInputField.sendKeys("valeria.penkovskaya@gmail.com");
         WebElement passwordInputField = driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[2]/form/div/div[2]/span/input"));
         passwordInputField.click();
         passwordInputField.sendKeys("qwerty123");
         WebElement loginButton = driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[2]/form/div/p[2]/button/span"));
-        loginButton.click();
+        loginButton.submit();
 
 
     }
